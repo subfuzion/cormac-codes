@@ -1,0 +1,13 @@
+{
+  "name": "array_product_example",
+  "private": true,
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js",
+    "watch-test": "nodemon \"node main.js\""
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
