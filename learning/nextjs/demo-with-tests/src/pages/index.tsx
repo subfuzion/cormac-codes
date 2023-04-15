@@ -1,29 +1,24 @@
-import { Inter } from 'next/font/google'
+import { Inter } from "next/font/google";
 
-import {add} from "../lib/lib";
+import { add } from "../lib/lib";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 type Props = {
-  sum: number
-}
+  sum: number;
+};
 
 interface Data {
-  sum: number
+  sum: number;
 }
 
 export async function getServerSideProps() {
   let sum = add(1, 2);
   return {
-    props: {sum: sum},
-  }
+    props: { sum: sum },
+  };
 }
 
-
-export default function Home({sum}: Data) {
-  return (
-    <>
-      1 + 2 = {sum}
-    </>
-  )
+export default function Home({ sum }: Data) {
+  return <>1 + 2 = {sum}</>;
 }
