@@ -11,11 +11,11 @@ if (argv.length < 4) {
 }
 
 let args = argv.slice(2);
-let sum = N(args[0]);
+let sum = N(args[0]!);
 const n = args.length - 1;
 
 for (let i = 1; i <= n; i++) {
-   sum = add(sum, N(args[i]));
+   sum = add(sum, N(args[i]!));
 }
 
 console.log(sum);
